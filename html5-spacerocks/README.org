@@ -1,0 +1,33 @@
+
+* HTML5 Spacerocks
+
+  There is a lot of canvas elements, so I feel like we should be able
+  to make HTML5 asteroids of some variety. Mainly because it's small,
+  simple and straightforward.
+
+  I'm going to try and use the same colour theme from the last item to
+  try and keep things consistent, but beyond that it's mostly going to
+  be going over new material.
+
+  With HTML5 using =<canvas>= and SVG images are part of the new
+  interesting components so we are going to focus on trying to use
+  "pure" SVG instead of bitmaps just for the practice. Interestingly
+  enough Mozilla's implementation as listed on [[https://developer.mozilla.org/en-US/docs/HTML/Canvas/Tutorial/Basic_usage?redirectlocale%3Den-US&redirectslug%3DCanvas_tutorial%252FBasic_usage][MDN]] expresses the
+  appropriate need for a fallback context for non-HTML5 browsers. This
+  is clearly implemented by having:
+
+  #+begin_src html
+    <canvas>
+      <!-- error or fallback context here -->
+    </canvas>
+  #+end_src
+
+  This seems to be standard just because it cleverly masks the fact
+  that an unknown element for a HTML tag is ignored as input error and
+  therefore the inner items are displayed. Mozilla also notes that the
+  =</canvas>= to encompass the existent or non-existent failback
+  context is a required tag for it to work right.
+
+  For this example it seems silly to do anything OTHER than a 640x480
+  rectangle as the canvas domain, so we are going to style it
+  accordingly.
