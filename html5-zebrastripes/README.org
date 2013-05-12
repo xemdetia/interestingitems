@@ -50,4 +50,5 @@
   effectively able to manage the styling in a much more efficient
   manner. It is our general hope to find better ways to style websites
   than setting either global identifiers or a class attribute
-  everywhere.
+  everywhere. In fact after the initial commit the primary item we did
+  was do this sort of refactoring.
