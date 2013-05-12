@@ -51,8 +51,8 @@ body { background-color: #14141F; color: #CCCCFF; font-family:sans-serif; font-s
 h1 { font-weight: bold; font-size: 16pt; margin:5pt;}
 .content { margin-left: auto; margin-right:auto; width:768px; background-color: #29293D; padding:5pt; }
 
-.zebra thead  { background-color: #412941; margin:5pt; font-weight:bold;} 
-.zebra th { padding: 5pt; text-align:center; width:33%;}
+.zebra thead  { background-color: #412941; margin:5pt; font-weight:bold;} .
+zebra th { padding: 5pt; text-align:center; width:33%;}
 .zebra td { color: black;  padding:3pt; padding-left:30px;}
 .zebra tbody tr:nth-child(2n) { background-color: #FFCCFF; }
 .zebra tbody tr:nth-child(2n+1){ background-color: #CCBCCC; }
