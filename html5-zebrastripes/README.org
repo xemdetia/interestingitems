@@ -1,0 +1,53 @@
+
+* HTML5 Zebra Stripes
+
+  In this example we would like to make a simple table that is
+  zebra-striped together in HTML5. The prelude to the new HTML5 setup
+  is described on [[https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Introduction_to_HTML5?redirectlocale%3Den-US&redirectslug%3DHTML%252FHTML5%252FIntroduction_to_HTML5][MDN]] and is as follows:
+
+  #+begin_src html
+    <!DOCTYPE html>
+    <meta charset="UTF-8">  
+  #+end_src
+
+  The first tag expresses this as HTML5, or at least hints that it is
+  compliant. The old versions of the DOCTYPE string for versions of
+  HTML earlier than 5 can be seen on [[http://www.w3schools.com/tags/tag_doctype.asp][w3schools]], where it was much more
+  convuluted. In general we didn't this tag in the past for better or
+  worse, mostly because it was that long and just ended up being
+  copy-paste drivel at best.
+
+  The second item identifies this as UTF-8, which is self-explanatory.
+
+  Both of these new fields are heavy reductions of old, more complex
+  things, and from there we can proceed into forming the document as
+  normal with the =<html>=, =<head>= and =<body>=. For this example we
+  are using the file =zebrastripes.css= which contains the classic
+  [[http://meyerweb.com/eric/tools/css/reset/][reset.css]].
+
+  A feature we were not generally using but is good to remind
+  ourselves of is in a =<link>= tag you can set the =media= or do a
+  media query. These things are better explained in depth on [[https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries?redirectlocale%3Den-US&redirectslug%3DCSS%252FMedia_queries][MDN]], and
+  perhaps if we do some cross-device sites I will look at them more
+  closely.
+
+  In HTML5 there is more of an explicit attempt to clarify what is the
+  actual intended structure of the page versus the visual appearance,
+  but that's not something to go in depth with here.
+
+  The actual Zebra Striping is done via the [[https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child?redirectlocale%3Den-US&redirectslug%3DCSS%252F%253Anth-child][:nth-child]] CSS selector,
+  but this example was more designed for trying to make sure we had
+  learned any other key features of HTML5 that were relevant.
+
+  We never really used CSS with actual tables before, we usually used
+  CSS tables of some variety so there are some caveats listed on
+  [[https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Tables][MDN]]. The first of which is *cells have no margins*, which is
+  interesting but quite reasonable.  Another interesting feature to
+  remember is that =<tr>= do not really have many things you can style
+  aside from borders, most of the styling is done through cells.
+
+  Remember the trick of using [[https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors?redirectlocale%3Den-US&redirectslug%3DCSS%252FGetting_Started%252FSelectors][CSS Selectors]] and you should be
+  effectively able to manage the styling in a much more efficient
+  manner. It is our general hope to find better ways to style websites
+  than setting either global identifiers or a class attribute
+  everywhere.
